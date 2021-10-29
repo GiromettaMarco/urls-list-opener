@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>URL List Opener</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>URLs List Opener</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-numb">#</th>
+                        <th class="col-link">Link</th>
+                        <th class="col-title">Title</th>
+                        <th class="col-data">Data</th>
+                    </tr>
+                </thead>
+                <tbody id="articles-table-body"></tbody>
+            </table>
+        </div>
+        <div id="counter" class="counter">
+            <span id="current">0</span>/<span id="total">0</span>
+        </div>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script>
+            opener.run();
+        </script>
+    </body>
+</html>
