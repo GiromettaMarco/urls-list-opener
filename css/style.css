@@ -7,7 +7,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.wrapper {
+.ulo-wrapper {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -19,7 +19,7 @@ h1 {
 
 
 /* Table */
-table {
+.ulo-table {
     width: 100%;
     background-color: #fff;
     position: relative;
@@ -32,17 +32,18 @@ table {
     -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
-tbody {
+.ulo-table tbody {
     max-height: 585px;
     overflow: auto;
 }
 
-th, td {
+.ulo-table th,
+.ulo-table td {
     padding-right: 10px;
     padding-left: 10px;
 }
 
-th {
+.ulo-table th {
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 18px;
@@ -52,7 +53,7 @@ th {
     text-align: left;
 }
 
-td {
+.ulo-table td {
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 15px;
@@ -60,34 +61,29 @@ td {
     line-height: 1.4;
 }
 
-tr:nth-child(even) {
+.ulo-table tr:nth-child(even) {
     background-color: #f8f6ff;
 }
 
-.col-numb {
+.ulo-col-numb {
     width: 5%;
     text-align: center;
 }
 
-.col-link {
+.ulo-col-link {
     width: 20%;
     padding-left: 40px;
 }
 
-.col-title {
+.ulo-col-title {
     width: 60%;
 }
 
-.col-data {
+.ulo-col-data {
     width: 15%;
 }
 
-.success {
-    background-color: #28a745;
-    color: #fff;
-}
-
-.counter {
+.ulo-counter {
     position: fixed;
     right: 60px;
     top: 48px;
@@ -105,13 +101,13 @@ tr:nth-child(even) {
     -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
-.counter.active {
+.ulo-counter.ulo-active {
     border-color: #e76f51;
     background-color: #f4a261;
     color: #fff;
 }
 
-.counter.done {
+.ulo-counter.ulo-done {
     border-color: #60d394;
     background-color: #aaf683;
     color: #000;

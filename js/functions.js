@@ -1,25 +1,25 @@
 var opener = {
 
   // Options (edit this)
-  listPath: 'list.php',
+  listPath: 'list.txt',
   engine: 'single.php',
   delay: 2000,
 
   // Layout related options
-  tableSelector: '#articles-table-body',
-  counterSelector: '#counter',
-  totalSelector: '#total',
-  currentSelector: '#current',
+  tableSelector: '#ulo-table-body',
+  counterSelector: '#ulo-counter',
+  totalSelector: '#ulo-total',
+  currentSelector: '#ulo-current',
 
   list: [],
   count: 0,
 
   run: function() {
     $.ajax({
-      url: opener.listPath,
+      url: 'list.php?fl=' + encodeURIComponent(opener.listPath),
       success: function(result) {
         opener.list = result.list;
-        $(opener.counterSelector).addClass('active');
+        $(opener.counterSelector).addClass('ulo-active');
         $(opener.totalSelector).html(opener.list.length);
       },
       error: function(jqXHR, textStatus, errorThrown) {
@@ -40,28 +40,27 @@ var opener = {
       setTimeout(function() {
         opener.writeRow(index, value);
         if (index === (opener.list.length - 1)) {
-          $(opener.counterSelector).removeClass('active');
-          $(opener.counterSelector).addClass('done');
+          $(opener.counterSelector).removeClass('ulo-active');
+          $(opener.counterSelector).addClass('ulo-done');
         }
       }, opener.delay * index);
     });
   },
 
   writeRow: function(index, value) {
-
-    var newID = 'row-' + index;
+    var newID = 'ulo-row-' + index;
     // Row
     var newRow = jQuery('<tr/>', {
       id: newID
     }).appendTo(opener.tableSelector);
     // Column Number
     jQuery('<td/>', {
-      class: 'col-numb',
+      class: 'ulo-col-numb',
       text: index + 1
     }).appendTo(newRow);
     // Column Source
     var newColumnSource = jQuery('<td/>', {
-      class: 'col-link'
+      class: 'ulo-col-link'
     }).appendTo(newRow);
     // Link
     jQuery('<a/>', {
@@ -71,12 +70,12 @@ var opener = {
     }).appendTo(newColumnSource);
     // Column Title
     var newColumnTitle = jQuery('<td/>', {
-      class: 'col-title',
+      class: 'ulo-col-title',
       text: 'loading ...'
     }).appendTo(newRow);
     // Column Data
     var newColumnData = jQuery('<td/>', {
-      class: 'col-data',
+      class: 'ulo-col-data',
       text: 'loading ...'
     }).appendTo(newRow);
 
@@ -105,7 +104,6 @@ var opener = {
 
     opener.count += 1;
     $(opener.currentSelector).html(opener.count);
-
   }
 
 };

@@ -1,6 +1,6 @@
 <?php
 
-// Datas delimiters.
+// Data delimiters.
 $title_start = '<title>';
 $title_end = '</title>';
 $data_start = '<span class="notranslate" id="prcIsum" itemprop="price"  style="text-decoration:none" content="';
