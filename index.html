@@ -26,13 +26,13 @@
                 <tbody id="ulo-table-body"></tbody>
             </table>
         </div>
-        <div id="ulo-counter" class="ulo-counter">
+        <div id="ulo-status" class="ulo-counter">
             <span id="ulo-current">0</span>/<span id="ulo-total">0</span>
         </div>
         <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/functions.js"></script>
+        <script src="js/ulo.js"></script>
         <script>
-            opener.run();
+            $( "#ulo-table-body" ).uloOpen();
         </script>
     </body>
 </html>
