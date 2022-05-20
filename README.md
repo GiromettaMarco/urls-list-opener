@@ -1,6 +1,6 @@
 # URLs List Opener
 
-This is a little application to open a list o URLs and extract data from its content.
+This is a little application to open a list of URLs and extract data from its content.
 
 ## How to use it
 
