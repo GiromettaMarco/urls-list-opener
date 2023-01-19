@@ -10,3 +10,5 @@
 **/.vscode
 /nbproject
 list.txt
+/config/config.php
+/config/config.js
