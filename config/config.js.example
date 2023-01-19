@@ -1,0 +1,13 @@
+/**
+ * Rename this file to 'config.js'.
+ */
+$("#ulo-table-body").uloOpen({
+    // Functional options
+    // listPath: 'list.txt',
+    // engine: 'single.php',
+    // delay: 2000,
+    // Layout related options
+    // statusSelector: '#ulo-status',
+    // currentSelector: '#ulo-current',
+    // totalSelector: '#ulo-total'
+});

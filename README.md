@@ -1,12 +1,12 @@
 # URLs List Opener
 
-This is a little application to open a list of URLs and extract data from its content.
+This is a little PHP + JS application to open a list of URLs and extract data from its content.
 
 ## How to use it
 
 - Write your URLs inside `list.txt` separated by a new line.
-- Open `single.php` and edit "Data delimiters" variables to find what you are looking for.
-- (optional) Open `index.html` and add options to `.uloOpen()` in JS (see below).
+- Inside `config` directory, create a new `config.php` file or rename `config.php.example` and edit "Data delimiters" variables to find what you are looking for.
+- Inside `config` directory, create a new `config.js` file or rename `config.js.example` and edit `.uloOpen()` properties (see below).
 
 ### JS options
 

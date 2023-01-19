@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Rename this file to 'config.php'.
+ *
+ * Data delimiters:
+ */
+$title_start = '<title>';
+$title_end = '</title>';
+$data_start = '<span id="price">';
+$data_end = '</span>';

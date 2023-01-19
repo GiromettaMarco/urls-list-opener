@@ -1,7 +1,4 @@
-/* 
-    Created on : Oct 21, 2021, 11:42:29 PM
-    Author     : Marco
-*/
+/* URLs List Opener custom style */
 
 body {
     font-family: 'Lato', sans-serif;
@@ -25,11 +22,7 @@ h1 {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
 }
 
 .ulo-table tbody {
@@ -94,11 +87,7 @@ h1 {
     font-size: 2rem;
     color: #000;
     font-weight: bold;
-    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
 }
 
 .ulo-counter.ulo-active {
