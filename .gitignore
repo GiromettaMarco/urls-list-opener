@@ -8,4 +8,5 @@
 **/.settings
 **/.nb-gradle-properties
 **/.vscode
-nbproject/
+/nbproject
+list.txt
