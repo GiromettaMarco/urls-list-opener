@@ -9,6 +9,7 @@
 **/.nb-gradle-properties
 **/.vscode
 /nbproject
+/.idea
 list.txt
 /config/config.php
 /config/config.js
