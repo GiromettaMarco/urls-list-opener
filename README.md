@@ -10,11 +10,11 @@ This is a little PHP + JS application to open a list of URLs and extract data fr
 
 ### JS options
 
-| Property   | Type    | Default        | Description                                                  | Example                     |
-| ---------- | ------- | -------------- | ------------------------------------------------------------ | --------------------------- |
-| `listPath` | string  | `'list.txt'`   | Path to the file containing the list                         | `'my_folder/my_list.txt'`  |
-| `engine`   | string  | `'single.php'` | Path to the PHP file for reading and extract data            | `'my_folder/my_engine.php'` |
-| `delay`    | integer | `2000`         | Delay time in milliseconds between every request. Useful to avoid being detected as spam |                             |
+| Property    | Type     | Default         | Description                                                                              | Example                      |
+|-------------|----------|-----------------|------------------------------------------------------------------------------------------|------------------------------|
+| `listPath`  | string   | `'list.txt'`    | Path to the file containing the list                                                     | `'my_folder/my_list.txt'`    |
+| `engine`    | string   | `'single.php'`  | Path to the PHP file for reading and extract data                                        | `'my_folder/my_engine.php'`  |
+| `delay`     | integer  | `2000`          | Delay time in milliseconds between every request. Useful to avoid being detected as spam |                              |
 
 ``````javascript
 $( "#ulo-table-body" ).uloOpen({
