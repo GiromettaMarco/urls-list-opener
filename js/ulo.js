@@ -97,7 +97,7 @@
         // Column Data
         const newColumnData = $('<td/>', {
             class: 'ulo-col-data',
-            text: 'loading ...'
+            text: '...'
         }).appendTo(newRow);
 
         $.ajax({
