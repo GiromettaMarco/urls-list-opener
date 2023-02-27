@@ -21,15 +21,12 @@ header {
     padding-top: 1rem;
 }
 
-footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
 .ulo-wrapper {
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 h1 {
@@ -40,6 +37,7 @@ h1 {
 /* Table */
 .ulo-table {
     width: 100%;
+    margin-bottom: 3rem;
     background-color: #fff;
     position: relative;
     border-radius: 10px;
@@ -47,18 +45,24 @@ h1 {
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
 }
 
+.ulo-table thead {
+    font-size: 1rem;
+}
+
+.ulo-table tbody {
+    font-size: 0.92rem;
+}
+
 .ulo-table th,
 .ulo-table td {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .ulo-table th {
-    padding-top: 18px;
-    padding-bottom: 18px;
-    font-size: 18px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: #fff;
-    line-height: 1.4;
     background-color: #6c7ae0;
     text-align: left;
 }
@@ -66,45 +70,29 @@ h1 {
 .ulo-table td {
     padding-top: 16px;
     padding-bottom: 16px;
-    font-size: 15px;
     color: #808080;
-    line-height: 1.4;
 }
 
 .ulo-table tr:nth-child(even) {
     background-color: #f8f6ff;
 }
 
-.ulo-col-numb {
-    width: 5%;
+.ulo-table .ulo-col-numb {
     text-align: center;
 }
 
-.ulo-col-link {
-    width: 20%;
-    padding-left: 40px;
-}
 
-.ulo-col-title {
-    width: 60%;
-}
-
-.ulo-col-data {
-    width: 15%;
-}
-
+/* Counter */
 .ulo-counter {
-    position: fixed;
-    right: 60px;
-    top: 48px;
+    padding: 2.25rem 2rem;
     border: 6px solid #d8e2dc;
     background-color: #e8e8e4;
-    border-radius: 5px;
-    padding: 40px;
-    font-size: 2rem;
-    color: #000;
-    font-weight: bold;
+    border-radius: 10px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
 }
 
 .ulo-counter.ulo-active {
@@ -119,7 +107,20 @@ h1 {
     color: #000;
 }
 
-.ulo-footer {
+@media (min-width: 1920px) {
+    .ulo-counter {
+        position: fixed;
+        right: 60px;
+        top: 48px;
+    }
+}
+
+
+/* Footer */
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
     text-align: center;
 }
 

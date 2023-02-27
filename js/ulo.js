@@ -70,11 +70,20 @@
             class: 'ulo-col-numb',
             text: index + 1
         }).appendTo(newRow);
-        // Column Source
-        const newColumnSource = $('<td/>', {
+        // Column Link
+        const newColumnLink = $('<td/>', {
             class: 'ulo-col-link'
         }).appendTo(newRow);
-        // Link
+        $('<a/>', {
+            href: value,
+            target: '_blank',
+            text: 'link'
+        }).appendTo(newColumnLink);
+        // Column Source
+        const newColumnSource = $('<td/>', {
+            class: 'ulo-col-source'
+        }).appendTo(newRow);
+        // Source
         $('<a/>', {
             href: window.location.href + 'single.php?prt=1&url=' + value,
             target: '_blank',
